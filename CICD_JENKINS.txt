@@ -22,7 +22,8 @@ C:\ProgramData\Jenkins\.jenkins\workspace\appium>python --version
 Python 3.12.0
 
 C:\ProgramData\Jenkins\.jenkins\workspace\appium>pip --version 
-pip 23.2.1 from C:\Program Files\Python312\Lib\site-packages\pip (python 3.12)
+pip 23.2.1 from C:\Program Files\Python312\Lib\site-packages\pip (python 3.12)
+
 
 C:\ProgramData\Jenkins\.jenkins\workspace\appium>cd C:\ProgramData\Jenkins\.jenkins\workspace\appium 
 
