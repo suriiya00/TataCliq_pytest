@@ -1,0 +1,70 @@
+Started by user surya
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\appium
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\appium\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/suriiya00/TataCliq_pytest.git # timeout=10
+Fetching upstream changes from https://github.com/suriiya00/TataCliq_pytest.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.45.1.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/suriiya00/TataCliq_pytest.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "origin/main^{commit}" # timeout=10
+Checking out Revision 100e5cd184d75b0282990b682fc2f1347f53f936 (origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 100e5cd184d75b0282990b682fc2f1347f53f936 # timeout=10
+Commit message: "Add files via upload"
+ > git.exe rev-list --no-walk 100e5cd184d75b0282990b682fc2f1347f53f936 # timeout=10
+[appium] $ cmd /c call C:\WINDOWS\TEMP\jenkins3384388652018701057.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\appium>python --version 
+Python 3.12.0
+
+C:\ProgramData\Jenkins\.jenkins\workspace\appium>pip --version 
+pip 23.2.1 from C:\Program Files\Python312\Lib\site-packages\pip (python 3.12)
+
+C:\ProgramData\Jenkins\.jenkins\workspace\appium>cd C:\ProgramData\Jenkins\.jenkins\workspace\appium 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\appium>python -m venv venv 
+
+C:\ProgramData\Jenkins\.jenkins\workspace\appium>call venv\Scripts\activate.bat 
+Requirement already satisfied: pip in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (25.3)
+Requirement already satisfied: selenium in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from -r requirements.txt (line 1)) (4.38.0)
+Requirement already satisfied: pytest in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from -r requirements.txt (line 2)) (8.4.2)
+Requirement already satisfied: pytest-html in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from -r requirements.txt (line 3)) (4.1.1)
+Requirement already satisfied: pytest-xdist in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from -r requirements.txt (line 4)) (3.8.0)
+Requirement already satisfied: webdriver-manager in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from -r requirements.txt (line 5)) (4.0.2)
+Requirement already satisfied: urllib3<3.0,>=2.5.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from urllib3[socks]<3.0,>=2.5.0->selenium->-r requirements.txt (line 1)) (2.5.0)
+Requirement already satisfied: trio<1.0,>=0.31.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from selenium->-r requirements.txt (line 1)) (0.32.0)
+Requirement already satisfied: trio-websocket<1.0,>=0.12.2 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from selenium->-r requirements.txt (line 1)) (0.12.2)
+Requirement already satisfied: certifi>=2025.10.5 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from selenium->-r requirements.txt (line 1)) (2025.10.5)
+Requirement already satisfied: typing_extensions<5.0,>=4.15.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from selenium->-r requirements.txt (line 1)) (4.15.0)
+Requirement already satisfied: websocket-client<2.0,>=1.8.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from selenium->-r requirements.txt (line 1)) (1.9.0)
+Requirement already satisfied: attrs>=23.2.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (25.4.0)
+Requirement already satisfied: sortedcontainers in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (2.4.0)
+Requirement already satisfied: idna in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (3.11)
+Requirement already satisfied: outcome in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (1.3.0.post0)
+Requirement already satisfied: sniffio>=1.3.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (1.3.1)
+Requirement already satisfied: cffi>=1.14 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (2.0.0)
+Requirement already satisfied: wsproto>=0.14 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from trio-websocket<1.0,>=0.12.2->selenium->-r requirements.txt (line 1)) (1.2.0)
+Requirement already satisfied: pysocks!=1.5.7,<2.0,>=1.5.6 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from urllib3[socks]<3.0,>=2.5.0->selenium->-r requirements.txt (line 1)) (1.7.1)
+Requirement already satisfied: colorama>=0.4 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest->-r requirements.txt (line 2)) (0.4.6)
+Requirement already satisfied: iniconfig>=1 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest->-r requirements.txt (line 2)) (2.3.0)
+Requirement already satisfied: packaging>=20 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest->-r requirements.txt (line 2)) (25.0)
+Requirement already satisfied: pluggy<2,>=1.5 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest->-r requirements.txt (line 2)) (1.6.0)
+Requirement already satisfied: pygments>=2.7.2 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest->-r requirements.txt (line 2)) (2.19.2)
+Requirement already satisfied: jinja2>=3.0.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest-html->-r requirements.txt (line 3)) (3.1.6)
+Requirement already satisfied: pytest-metadata>=2.0.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest-html->-r requirements.txt (line 3)) (3.1.1)
+Requirement already satisfied: execnet>=2.1 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from pytest-xdist->-r requirements.txt (line 4)) (2.1.1)
+Requirement already satisfied: requests in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from webdriver-manager->-r requirements.txt (line 5)) (2.32.5)
+Requirement already satisfied: python-dotenv in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from webdriver-manager->-r requirements.txt (line 5)) (1.2.1)
+Requirement already satisfied: pycparser in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from cffi>=1.14->trio<1.0,>=0.31.0->selenium->-r requirements.txt (line 1)) (2.23)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from jinja2>=3.0.0->pytest-html->-r requirements.txt (line 3)) (3.0.3)
+Requirement already satisfied: h11<1,>=0.9.0 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from wsproto>=0.14->trio-websocket<1.0,>=0.12.2->selenium->-r requirements.txt (line 1)) (0.16.0)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\programdata\jenkins\.jenkins\workspace\appium\venv\lib\site-packages (from requests->webdriver-manager->-r requirements.txt (line 5)) (3.4.4)
+....                                                                     [100%]
+- generated xml file: C:\ProgramData\Jenkins\.jenkins\workspace\appium\reports\junit_report.xml -
+- Generated html report: file:///C:/ProgramData/Jenkins/.jenkins/workspace/appium/reports/tatacliq_report.html -
+4 passed in 40.40s
+Finished: SUCCESS
